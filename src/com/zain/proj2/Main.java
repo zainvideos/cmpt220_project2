@@ -10,38 +10,39 @@ public class Main {
         MALE, FEMALE
     }
 
-    public class Olympian {
-        public String Name;
-        public Sex sex;
-        public int age;
+    public static class Olympian {
+        public static String Name;
+        public static Sex sex;
+        public static int age;
     }
     //welcome to the Matrix
-    public static
-    String[][] OlympianManager = new String[][]{
-            {"Bob", "male", "41"},
-            {"Mike", "male", "13"},
-            {"Derk", "male", "23"},
-            {"Derky", "female", "21"},
-            {"Derp", "male", "53"},
-            {"Derpina", "female", "55"},
-            {"Merk", "male", "44"},
-            {"Derker", "male", "3"},
-            {"Berkmatic", "male", "26"},
-            {"Sudsy", "female", "29"},
-            {"Dork", "male", "93"},
-            {"Vern", "male", "33"},
-            {"Surpy", "female", "58"},
-            {"Brianna", "female", "32"},
-            {"Brian", "male", "32"},
-    };
+    public static class OlympianManager {
+        static String[][] Olympians = new Olympian(Olympian.Name, Olympian.sex, Olympian.age){
+                {"Bob", "male", "41"},
+                {"Mike", "male", "13"},
+                {"Derk", "male", "23"},
+                {"Derky", "female", "21"},
+                {"Derp", "male", "53"},
+                {"Derpina", "female", "55"},
+                {"Merk", "male", "44"},
+                {"Derker", "male", "3"},
+                {"Berkmatic", "male", "26"},
+                {"Sudsy", "female", "29"},
+                {"Dork", "male", "93"},
+                {"Vern", "male", "33"},
+                {"Surpy", "female", "58"},
+                {"Brianna", "female", "32"},
+                {"Brian", "male", "32"},
+        };
+    }
 
     //we obviously need to loop through all the values in the olympian matrix to print them, using the standard
     //System.out.println(olympian); is just going to print out the memory location of the matrix lol
     public static void getOlympians() {
         int i;
-        for (i = 0; i < OlympianManager.length; i++) {
+        for (i = 0; i < OlympianManager.Olympians.length; i++) {
             for (int j = 0; j < 3; j++) {
-                System.out.println(OlympianManager[i][j] + " ");
+                System.out.println(OlympianManager.Olympians[i][j] + " ");
             }
             System.out.println("\n");
         }
@@ -57,15 +58,106 @@ public class Main {
 
     }
 //extend the event class with additional info
-    public abstract class subEvent extends Event {
-        public int frisbeeSize;
-        public int numBeanBags;
-        public int numHorseShoes;
-        public int numRings;
-        public boolean hasAutoWinStick;
-        public int numWashoos;
+private class HorseShoesEvent extends Event {
+    int numHorseShoes;
 
+    public String getExtraInfo() {
+        return null;
 
+    }
+    public int getnumHorseShoes(){
+        return numHorseShoes;
+    }
+    public int setnumHorseShoes(){
+        numHorseShoes = 12;
+        return Integer.parseInt(null);
+    }
+}
+private class CornHoleEvent extends Event {
+    int numBeanBags;
+
+    public String getExtraInfo() {
+        return null;
+
+    }
+    public int getnumBeanBags(){
+        return numBeanBags;
+    }
+    public int setnumBeanBags(){
+        numBeanBags = 12;
+        return Integer.parseInt(null);
+    }
+}
+private class CanJamEvent extends Event {
+    int numRings;
+
+    public String getExtraInfo() {
+        return null;
+
+    }
+    public int getnumRings(){
+        return numRings;
+    }
+    public int setnumRings(){
+        numRings = 12;
+        return Integer.parseInt(null);
+    }
+}
+    private class LadderBallEvent extends Event {
+    int numRungs;
+
+    public String getExtraInfo() {
+        return null;
+
+    }
+    public int getnumRungs(){
+        return numRungs;
+    }
+    public int setnumRungs(){
+        this.numRungs = numRungs;
+        return Integer.parseInt(null);
+    }
+}
+    private class StickGameEvent extends Event {
+        int frisbeeSize;
+
+        public String getExtraInfo() {
+            return null;
+
+        }
+        public int getfrisbeeSize(){
+            return frisbeeSize;
+        }
+        public int setfrisbeeSize(){
+            frisbeeSize = 12;
+            return Integer.parseInt(null);
+        }
+    }
+    private class WashoosEvent extends Event {
+        int numWashoos;
+        boolean hasAutoWinStick;
+
+        public String getExtraInfo() {
+            return null;
+
+        }
+        public int getnumWashoos(){
+            return numWashoos;
+        }
+        public int setnumWashoos(){
+            numWashoos = 12;
+            return Integer.parseInt(null);
+        }
+        public boolean gethasAutoWinStick(){
+            return hasAutoWinStick;
+        }
+        public boolean sethasAutoWinStick(){
+            hasAutoWinStick= true;
+            return Boolean.parseBoolean(null);
+        }
+    }
+// garbage from my last attempt at doing this
+/*
         public int frisbeeSize() {
             return frisbeeSize;
         }
@@ -95,24 +187,37 @@ public class Main {
             return subEvent.super.name;
         }
     }
-
+*/
 // lets make an array with all the events
-    public static class EventManager {
-        public static String[] EventManager = new String[]{"WashoosEvent", "CanJamEvent", "HorseshoesEvent", "CornholeEvent", "LadderballEvent", "StickgameEvent"};
 
-        public static Event[] getEvents() {
+    public class EventManager {
+    public LadderBallEvent Event1 = new LadderBallEvent();
+
+    public StickGameEvent Event2 = new StickGameEvent();
+    public WashoosEvent Event3 = new WashoosEvent();
+    public CanJamEvent Event4 = new CanJamEvent();
+    public CornHoleEvent Event5 = new CornHoleEvent();
+    public HorseShoesEvent Event6 = new HorseShoesEvent();
+    public Event[] Events = new Event[]{
+            Event3, Event2, Event1, Event4, Event5, Event6};
+
+    }
+
+
+
+
+    public static Event[] getEvents() {
 // another loop, but this time to print out the events
-            for (int i = 0; i < EventManager.length; i++) {
+            for (int i = 0; i < 6; i++) {
 
-                System.out.println(EventManager[i]);
+                System.out.println(EventManager.Events[i]);
             }
-
             return new Event[0];
-
         }
 
 
-    }
+
+
 
 
     public static void main(String[] args) {

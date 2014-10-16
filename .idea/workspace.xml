@@ -26,23 +26,23 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/zain/proj2/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08108108" vertical-offset="1970" max-vertical-offset="2414">
-              <caret line="118" column="29" selection-start-line="118" selection-start-column="29" selection-end-line="118" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.75468975" vertical-offset="3081" max-vertical-offset="4199">
+              <caret line="212" column="54" selection-start-line="212" selection-start-column="54" selection-end-line="212" selection-end-column="54" />
               <folding>
-                <element signature="e#2033#2034#0" expanded="true" />
-                <element signature="e#2075#2076#0" expanded="true" />
-                <element signature="e#2111#2112#0" expanded="true" />
-                <element signature="e#2153#2154#0" expanded="true" />
-                <element signature="e#2191#2192#0" expanded="true" />
-                <element signature="e#2235#2236#0" expanded="true" />
-                <element signature="e#2268#2269#0" expanded="true" />
-                <element signature="e#2307#2308#0" expanded="true" />
-                <element signature="e#2351#2352#0" expanded="true" />
-                <element signature="e#2397#2398#0" expanded="true" />
-                <element signature="e#2432#2433#0" expanded="true" />
-                <element signature="e#2473#2474#0" expanded="true" />
-                <element signature="e#2574#2575#0" expanded="true" />
-                <element signature="e#2624#2625#0" expanded="true" />
+                <element signature="e#2103#2104#0" expanded="true" />
+                <element signature="e#2139#2140#0" expanded="true" />
+                <element signature="e#2411#2412#0" expanded="true" />
+                <element signature="e#2445#2446#0" expanded="true" />
+                <element signature="e#2705#2706#0" expanded="true" />
+                <element signature="e#2736#2737#0" expanded="true" />
+                <element signature="e#2998#2999#0" expanded="true" />
+                <element signature="e#3029#3030#0" expanded="true" />
+                <element signature="e#3327#3328#0" expanded="true" />
+                <element signature="e#3369#3370#0" expanded="true" />
+                <element signature="e#3711#3712#0" expanded="true" />
+                <element signature="e#3752#3753#0" expanded="true" />
+                <element signature="e#3915#3916#0" expanded="true" />
+                <element signature="e#3961#3962#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,8 +64,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2068" />
-    <option name="y" value="66" />
+    <option name="x" value="2" />
+    <option name="y" value="2" />
     <option name="width" value="1598" />
     <option name="height" value="858" />
   </component>
@@ -103,6 +103,34 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="cmpt220_project2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmpt220_project2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmpt220_project2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmpt220_project2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmpt220_project2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -276,7 +304,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2068" y="66" width="1598" height="858" extended-state="0" />
+    <frame x="2" y="2" width="1598" height="858" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -284,8 +312,9 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977304" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39919892" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -296,10 +325,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25221238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35246995" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35246995" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -330,23 +358,23 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/zain/proj2/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08108108" vertical-offset="1970" max-vertical-offset="2414">
-          <caret line="118" column="29" selection-start-line="118" selection-start-column="29" selection-end-line="118" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.75468975" vertical-offset="3081" max-vertical-offset="4199">
+          <caret line="212" column="54" selection-start-line="212" selection-start-column="54" selection-end-line="212" selection-end-column="54" />
           <folding>
-            <element signature="e#2033#2034#0" expanded="true" />
-            <element signature="e#2075#2076#0" expanded="true" />
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2153#2154#0" expanded="true" />
-            <element signature="e#2191#2192#0" expanded="true" />
-            <element signature="e#2235#2236#0" expanded="true" />
-            <element signature="e#2268#2269#0" expanded="true" />
-            <element signature="e#2307#2308#0" expanded="true" />
-            <element signature="e#2351#2352#0" expanded="true" />
-            <element signature="e#2397#2398#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2473#2474#0" expanded="true" />
-            <element signature="e#2574#2575#0" expanded="true" />
-            <element signature="e#2624#2625#0" expanded="true" />
+            <element signature="e#2103#2104#0" expanded="true" />
+            <element signature="e#2139#2140#0" expanded="true" />
+            <element signature="e#2411#2412#0" expanded="true" />
+            <element signature="e#2445#2446#0" expanded="true" />
+            <element signature="e#2705#2706#0" expanded="true" />
+            <element signature="e#2736#2737#0" expanded="true" />
+            <element signature="e#2998#2999#0" expanded="true" />
+            <element signature="e#3029#3030#0" expanded="true" />
+            <element signature="e#3327#3328#0" expanded="true" />
+            <element signature="e#3369#3370#0" expanded="true" />
+            <element signature="e#3711#3712#0" expanded="true" />
+            <element signature="e#3752#3753#0" expanded="true" />
+            <element signature="e#3915#3916#0" expanded="true" />
+            <element signature="e#3961#3962#0" expanded="true" />
           </folding>
         </state>
       </provider>
