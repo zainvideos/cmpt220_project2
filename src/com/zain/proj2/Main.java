@@ -77,8 +77,13 @@ private class HorseShoesEvent extends Event {
     //public name "HorseShoes";
     //Trying to figure out how to name these events
     //HorseShoesEvent.name
-    int numHorseShoes;
+    //figured it out:
 
+    int numHorseShoes;
+    private String name ="HorseShoes";
+
+    public String getName() {
+        return name;}
     public String getExtraInfo() {
         return numHorseShoes + "";
 
@@ -93,7 +98,10 @@ private class HorseShoesEvent extends Event {
 }
 private class CornHoleEvent extends Event {
     int numBeanBags;
+    private String name ="CornHole";
 
+    public String getName() {
+        return name;}
     public String getExtraInfo() {
         return numBeanBags + "";
 
@@ -108,7 +116,10 @@ private class CornHoleEvent extends Event {
 }
 private class CanJamEvent extends Event {
     int numRings;
+    private String name ="CanJam";
 
+    public String getName() {
+        return name;}
     public String getExtraInfo() {
         return numRings + "";
 
@@ -123,7 +134,10 @@ private class CanJamEvent extends Event {
 }
     private class LadderBallEvent extends Event {
     int numRungs;
+        private String name ="LadderBall";
 
+        public String getName() {
+            return name;}
     public String getExtraInfo() {
         return numRungs + "";
 
@@ -138,7 +152,10 @@ private class CanJamEvent extends Event {
 }
     private class StickGameEvent extends Event {
         int frisbeeSize;
+        private String name ="StickGame";
 
+        public String getName() {
+            return name;}
         public String getExtraInfo() {
             return frisbeeSize + "";
 
@@ -154,7 +171,11 @@ private class CanJamEvent extends Event {
     private class WashoosEvent extends Event {
         int numWashoos;
         boolean hasAutoWinStick;
+        private String name ="Washoos";
 
+        public String getName() {
+            return name;
+        }
         public String getExtraInfo() {
             return numWashoos + "";
 
@@ -217,7 +238,7 @@ private class CanJamEvent extends Event {
     public CornHoleEvent Event5 = new CornHoleEvent();
     public HorseShoesEvent Event6 = new HorseShoesEvent();
     public Event[] Events = new Event[]{
-            Event1, Event2, Event1, Event4, Event5, Event6};
+            Event3, Event2, Event1, Event4, Event5, Event6};
 
         public void Events() {
         }
@@ -233,10 +254,16 @@ private class CanJamEvent extends Event {
         xxy.Events();
             for (int i = 0; i < xxy.Events.length; i++) {
 
-
-                System.out.println(xxy.Events[i]);
+// still need to fix up extra info print, wasnt sure what info you wanted that stuff to be set by default
+                System.out.println(xxy.Events[i].getExtraInfo());
 
             }
+        System.out.println(xxy.Event1.getName());
+        System.out.println(xxy.Event2.getName());
+            System.out.println(xxy.Event3.getName());
+        System.out.println(xxy.Event4.getName());
+        System.out.println(xxy.Event5.getName());
+        System.out.println(xxy.Event6.getName());
             return new Event[0];
         }
 
@@ -247,8 +274,7 @@ private class CanJamEvent extends Event {
 
     public static void main(String[] args) {
 Main xyz = new Main();
-        xyz.getOlympians();
-        xyz.getEvents();
+
 
         //app welcome message
         System.out.println("Welcome To the Smith Family Olympics App. Enter a command or press h for help.");
