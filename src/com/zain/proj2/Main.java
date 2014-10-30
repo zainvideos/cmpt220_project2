@@ -1,7 +1,7 @@
 //Created by Zain Qayyum 10/9/2014
 package com.zain.proj2;
 
-import static com.zain.proj2.Main.EventManager.getEvents;
+//import static com.zain.proj2.Main.EventManager.getEvents;
 
 public class Main {
 
@@ -10,14 +10,27 @@ public class Main {
         MALE, FEMALE
     }
 
-    public static class Olympian {
-        public static String Name;
-        public static Sex sex;
-        public static int age;
+    public class Olympian {
+        public String Name;
+        public Sex sex;
+        public int age;
+        public Olympian(String Name, Sex sex, int age){
+            this.Name= Name;
+            this.sex= sex;
+            this.age= age;
+        }
+
     }
     //welcome to the Matrix
-    public static class OlympianManager {
-        static String[][] Olympians = new Olympian(Olympian.Name, Olympian.sex, Olympian.age){
+    public class OlympianManager {
+        public Olympian[] Olympians = new Olympian[]{new Olympian("bob", Sex.MALE, 41),new Olympian("Mike", Sex.MALE, 13),
+                new Olympian("Derk", Sex.MALE, 23),new Olympian("Derky", Sex.FEMALE, 21), new Olympian("Derp", Sex.MALE, 53),
+                new Olympian("Derpina", Sex.FEMALE, 13),new Olympian("Merk", Sex.MALE, 13),new Olympian("Derker", Sex.MALE, 3),
+                new Olympian("Berkmatic", Sex.MALE, 26),new Olympian("Sudsy", Sex.FEMALE, 29),new Olympian("Dork", Sex.MALE, 13),
+                new Olympian("Vern", Sex.MALE, 33),new Olympian("Surpy", Sex.FEMALE, 58),new Olympian("Brianna", Sex.FEMALE, 32),
+                new Olympian("Brian", Sex.MALE, 32)};
+
+        /* String[][] Olympians = new Olympian(Olympian.Name, Olympian.sex, Olympian.age){
                 {"Bob", "male", "41"},
                 {"Mike", "male", "13"},
                 {"Derk", "male", "23"},
@@ -33,18 +46,20 @@ public class Main {
                 {"Surpy", "female", "58"},
                 {"Brianna", "female", "32"},
                 {"Brian", "male", "32"},
-        };
+        };*/
     }
 
     //we obviously need to loop through all the values in the olympian matrix to print them, using the standard
     //System.out.println(olympian); is just going to print out the memory location of the matrix lol
-    public static void getOlympians() {
-        int i;
-        for (i = 0; i < OlympianManager.Olympians.length; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.println(OlympianManager.Olympians[i][j] + " ");
-            }
-            System.out.println("\n");
+    public void getOlympians() {
+
+       OlympianManager x = new OlympianManager();
+        //x.Olympians[0]
+        for (int i = 0; i < x.Olympians.length; i++) {
+
+                System.out.println(x.Olympians[i].Name +", " + x.Olympians[i].sex +", "+ x.Olympians[i].age );
+
+
         }
     }
 
@@ -59,10 +74,13 @@ public class Main {
     }
 //extend the event class with additional info
 private class HorseShoesEvent extends Event {
+    //public name "HorseShoes";
+    //Trying to figure out how to name these events
+    //HorseShoesEvent.name
     int numHorseShoes;
 
     public String getExtraInfo() {
-        return null;
+        return numHorseShoes + "";
 
     }
     public int getnumHorseShoes(){
@@ -77,7 +95,7 @@ private class CornHoleEvent extends Event {
     int numBeanBags;
 
     public String getExtraInfo() {
-        return null;
+        return numBeanBags + "";
 
     }
     public int getnumBeanBags(){
@@ -92,7 +110,7 @@ private class CanJamEvent extends Event {
     int numRings;
 
     public String getExtraInfo() {
-        return null;
+        return numRings + "";
 
     }
     public int getnumRings(){
@@ -107,7 +125,7 @@ private class CanJamEvent extends Event {
     int numRungs;
 
     public String getExtraInfo() {
-        return null;
+        return numRungs + "";
 
     }
     public int getnumRungs(){
@@ -122,7 +140,7 @@ private class CanJamEvent extends Event {
         int frisbeeSize;
 
         public String getExtraInfo() {
-            return null;
+            return frisbeeSize + "";
 
         }
         public int getfrisbeeSize(){
@@ -138,7 +156,7 @@ private class CanJamEvent extends Event {
         boolean hasAutoWinStick;
 
         public String getExtraInfo() {
-            return null;
+            return numWashoos + "";
 
         }
         public int getnumWashoos(){
@@ -199,18 +217,25 @@ private class CanJamEvent extends Event {
     public CornHoleEvent Event5 = new CornHoleEvent();
     public HorseShoesEvent Event6 = new HorseShoesEvent();
     public Event[] Events = new Event[]{
-            Event3, Event2, Event1, Event4, Event5, Event6};
+            Event1, Event2, Event1, Event4, Event5, Event6};
 
+        public void Events() {
+        }
     }
 
 
 
 
-    public static Event[] getEvents() {
+    public Event[] getEvents() {
+        //EventManager evnt = new EventManager();
 // another loop, but this time to print out the events
-            for (int i = 0; i < 6; i++) {
+        EventManager xxy = new EventManager();
+        xxy.Events();
+            for (int i = 0; i < xxy.Events.length; i++) {
 
-                System.out.println(EventManager.Events[i]);
+
+                System.out.println(xxy.Events[i]);
+
             }
             return new Event[0];
         }
@@ -221,15 +246,20 @@ private class CanJamEvent extends Event {
 
 
     public static void main(String[] args) {
+Main xyz = new Main();
+        xyz.getOlympians();
+        xyz.getEvents();
+
         //app welcome message
         System.out.println("Welcome To the Smith Family Olympics App. Enter a command or press h for help.");
 //lets start with args.length so we can complain about blank entries right off the bat
         if (args.length == 0)
             System.out.println("You need to select an option.... are you feeling ok?");
         else if (args[0].equals("o") || args[0].equals("olympians")) {
-            getOlympians();
+
+            xyz.getOlympians();
         } else if (args[0].equals("e") || args[0].equals("events")) {
-            getEvents();
+            xyz.getEvents();
         }else if(args[0].equals("h")||args[0].equals("help")) {
             System.out.println("Type e for list of events, or type o for a list of olympians");
         }
